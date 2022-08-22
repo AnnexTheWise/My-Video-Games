@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<link rel="stylesheet" href="./Css/styles.css">
+    <title>Carousel</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1 class="logo">My Favorite Games</h1>
+                </div>
+                <div class="col-md-8">
+                    <nav class="nav top-nav justify-content-center justify-content-md-end" id="top-nav">
+                        <a href="#section1" class="nav-link product-link">Section1</a>
+                        <a href="#section2" class="nav-link product-link">Section2</a>
+                        <a href="#section3" class="nav-link product-link">Section3</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="section" id="section1">
+            <div class="container">
+                <!-- carousel -->
+                <div id="mycarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" id="Persona5">
+                        <img src="https://image.api.playstation.com/vulcan/img/rnd/202011/0204/XTbLZ4M3vFxy3WFHB66Ja9qL.jpg" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item" id="Undertale">
+                        <img src="https://ksr-ugc.imgix.net/assets/011/533/904/f58978f175eba8065d1b5afe4545876d_original.png?ixlib=rb-4.0.2&amp;crop=faces&amp;w=1552&amp;h=873&amp;fit=crop&amp;v=1463684109&amp;auto=format&amp;frame=1&amp;q=92&amp;s=e3cc8b22a13b5f5efcf34ad2793dac51"class="d-block w-100">
+                      </div>
+                      <div class="carousel-item" id="FNaF">
+                        <img src="https://cdn.akamai.steamstatic.com/steam/apps/319510/capsule_616x353.jpg?t=1579635996" class="d-block w-100">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#mycarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#mycarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="section2">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/05/Joker-Persona-5-feature.jpg" jsaction="load:XAeZkd;">
+                            <div class="card-body">
+                                <h2 class="card-h2">Main character of Persona 5</h2>
+                                <p class="card-text">This is Joker, main protagonist of Persona 5. He is a falsely accused high school student trying to save the world from corrupted people trying to make the world in their image. He does that by exploring through what is called the metaverse. While in the metaverse, he and his team have unique abilities known as Personas. They use these personas to fight and save the world from the corrupted society.</p>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="#Persona5">#Persona5</a>
+                                <a href="#Undertale">#Undertale</a>
+                                <a href="#FNaF">#FNaF</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="data:image/jpeg;base64,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">
+                            <div class="card-body">
+                                <h2 class="card-h2">Main character of Undertale</h2>
+                                <p class="card-text">This would be Frisk, the main protagonist of Undertale. They fell into the underground from the surface world. They go around the underground either befriending or killing monsters to break the barrier at the end of the journey.</p>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="#Persona5">#Persona5</a>
+                                <a href="#Undertale">#Undertale</a>
+                                <a href="#FNaF">#FNaF</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://i.kinja-img.com/gawker-media/image/upload/c_scale,f_auto,fl_progressive,pg_1,q_80,w_800/2650d72e77c32ad80f943c11c47de23a.jpg">
+                            <div class="card-body">
+                                <h2 class="card-h2">Star of The Show, Freddy Fazbear</h2>
+                                <p class="card-text">This is Freddy Fazbear. The main star of the Fazbear crew. This fuzzy goliath is trying to brutally murder you. In his first game. He and the others were meant to come into your office and stuff you into a suit. That would spell the end for you, so your job is to prevent that in whatever way possible. </p>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="#Persona5">#Persona5</a>
+                                <a href="#Undertale">#Undertale</a>
+                                <a href="#FNaF">#FNaF</a>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="section3">
+            <div class="container">
+                <div class="row row-col-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <header class="card-header">
+                                <h2 class="card-h2">Name</h2>
+                            </header>
+                            <img src="https://underbuffed.com/wp-content/uploads/2020/03/Persona-5-Royal-Justice-Confidant-Goro-Akechi-Cover.jpg">
+                            <div class="card-body">
+                                <p class="card-text">Begin</p>
+                                <p class="card-text">End</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Fact1</li>
+                                <li class="list-group-item">Fact2</li>
+                                <li class="list-group-item">Fact3</li>
+                            </ul>
+                            <footer class="card-footer">
+                                <a href="#link">#tag</a>
+                                <a href="#link">#tag</a>
+                                <a href="#link">#tag</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h1-100">
+                            <header class="card-header">
+                                <h2 class="card-h2">Name</h2>
+                            </header>
+                            <img src="https://i.redd.it/ep3z9uo10kh51.jpg">
+                            <div class="card-body">
+                                <p class="card-text">Begin</p>
+                                <p class="card-text">End</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Fact1</li>
+                                <li class="list-group-item">Fact2</li>
+                                <li class="list-group-item">Fact3</li>
+                            </ul>
+                            <footer class="card-footer">
+                                <a href="#link">#tag</a>
+                                <a href="#link">#tag</a>
+                                <a href="#link">#tag</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <header class="card-header">
+                                <h2 class="card-h2">Name</h2>
+                            </header>
+                            <img src="https://static.wikia.nocookie.net/6ca0b17f-73d6-44eb-9165-6caa736124a6/scale-to-width/755">
+                            <div class="card-body">
+                                <p class="card-text">Begin</p>
+                                <p class="card-text">End</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Fact1</li>
+                                <li class="list-group-item">Fact2</li>
+                                <li class="list-group-item">Fact3</li>
+                            </ul>
+                            <footer class="card-footer">
+                                <a href="#link">#tag</a>
+                                <a href="#link">#tag</a>
+                                <a href="#link">#tag</a>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>

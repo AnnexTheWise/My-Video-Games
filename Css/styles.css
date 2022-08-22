@@ -1,0 +1,19 @@
+*{box-sizing: border-box;}
+
+.header {
+    padding: 20px 0;
+    background-color: #eaeae3;
+}
+
+.logo {
+    color: #109eff;
+    text-transform: uppercase;
+}
+
+.section {
+    padding: 50px 0;
+}
+
+.carousel-image {
+    max-height: 600px;
+}
